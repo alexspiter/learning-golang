@@ -479,20 +479,58 @@ x<sub>2</sub>, y<sub>2</sub>, width<sub>2</sub>, height<sub>2</sub>)
 Извучить [статью о сортировках](https://habr.com/ru/post/335920/)    
 Написать функции, реализующие следующие виды сортировок
     1. Сортировка пузырьком
-    1. Шейкерная сортировка
-    1. Сортировка расческой
     1. Сортировка вставками
-    1. Сортировка Шелла
-    1. Сортировка деревом
-    1. Гномья сортировка
-    1. Сортировка выбором
-    1. Пирамидальная сортировка
-    1. Быстрая сортировка
     1. Сортировка слиянием
+    1. Быстрая сортировка
     1. Сортировка подсчетом
-    1. Блочная сортировка
     1. Поразрядная сортировка
-    1. LSD (least significant digit)
-    1. MSD (most significant digit)
-    1. Битонная сортировка
     1. Timsort
+
+### Компетенции
+#### Введение
+- [ ] Переменные и типы данных
+- [ ] Операторы (арифметические, сравнения, логические, побитовые, присваивания)
+- [ ] Линейные алгоритмы
+- [ ] Условные операторы
+- [ ] Циклы
+- [ ] Функции
+- [ ] Массивы (статические, динамические)
+- [ ] Строки
+- [ ] Структуры (struct)
+- [ ] Указатели (управление памятью)
+#### Алгоритмы и структуры данных
+- [ ] Map
+- [ ] Сортировки
+- [ ] Бинарный поиск
+- [ ] Тернарный поиск
+- [ ] Метод сканирующей прямой
+- [ ] Списки
+- [ ] Стек
+- [ ] Очередь
+- [ ] Очередь с приоритетами
+- [ ] Множество
+- [ ] Алгоритм Евклида
+([битовые вектора](https://acm.khpnets.info/w/index.php?title=%D0%9C%D0%BD%D0%BE%D0%B6%D0%B5%D1%81%D1%82%D0%B2%D0%BE._%D0%A0%D0%B5%D0%B0%D0%BB%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F_%D0%BD%D0%B0_%D0%B1%D0%B8%D1%82%D0%BE%D0%B2%D1%8B%D1%85_%D0%B2%D0%B5%D0%BA%D1%82%D0%BE%D1%80%D0%B0%D1%85))
+- [ ] АВЛ-дерево
+- [ ] Декартово дерево
+- [ ] RSQ/RMQ
+- [ ] Поиск в глубину
+- [ ] Поиск в ширину
+
+---
+
+### Полезные ссылки
+###### Алгоритмы и структуры данных
+[Timus - архив задач](http://acm.timus.ru/?locale=ru)    
+[Алгоритмы и структуры данных (acm.khpnets.info)](https://acm.khpnets.info/w/index.php?title=%D0%9A%D0%B0%D1%82%D0%B5%D0%B3%D0%BE%D1%80%D0%B8%D1%8F:%D0%A3%D1%87%D0%B5%D0%B1%D0%BD%D1%8B%D0%B9_%D0%BA%D1%83%D1%80%D1%81_%C2%AB%D0%90%D0%BB%D0%B3%D0%BE%D1%80%D0%B8%D1%82%D0%BC%D1%8B_%D0%B8_%D1%81%D1%82%D1%80%D1%83%D0%BA%D1%82%D1%83%D1%80%D1%8B_%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85%C2%BB)    
+[Data Structures and Algorithms (discuss.codechef.com)](https://discuss.codechef.com/t/data-structures-and-algorithms/6599)    
+[Data Structures (geeksforgeeks.org)](https://www.geeksforgeeks.org/data-structures/)    
+[Algorithms (geeksforgeeks.org)](https://www.geeksforgeeks.org/fundamentals-of-algorithms/)    
+[Дискретная математика, алгоритмы и структуры данных (neerc.ifmo.ru)](http://neerc.ifmo.ru/wiki/index.php?title=%D0%94%D0%B8%D1%81%D0%BA%D1%80%D0%B5%D1%82%D0%BD%D0%B0%D1%8F_%D0%BC%D0%B0%D1%82%D0%B5%D0%BC%D0%B0%D1%82%D0%B8%D0%BA%D0%B0,_%D0%B0%D0%BB%D0%B3%D0%BE%D1%80%D0%B8%D1%82%D0%BC%D1%8B_%D0%B8_%D1%81%D1%82%D1%80%D1%83%D0%BA%D1%82%D1%83%D1%80%D1%8B_%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85#.D0.A1.D0.B8.D1.81.D1.82.D0.B5.D0.BC.D0.B0_.D0.BD.D0.B5.D0.BF.D0.B5.D1.80.D0.B5.D1.81.D0.B5.D0.BA.D0.B0.D1.8E.D1.89.D0.B8.D1.85.D1.81.D1.8F_.D0.BC.D0.BD.D0.BE.D0.B6.D0.B5.D1.81.D1.82.D0.B2)    
+[Алгоритмы (e-maxx.ru)](http://e-maxx.ru/algo/)    
+[Структуры данных (aisd.kubsau.ru)](http://aisd.kubsau.ru/labs.html)    
+[Hackerrank](https://www.hackerrank.com/dashboard)    
+[Perl (мехмат 54 школы г. Москвы, mech.math.msu.su)](http://mech.math.msu.su/~shvetz/54/inf/perl-problems/)    
+
+###### Проектирование
+[Refactoring.guru](https://refactoring.guru/ru/)
