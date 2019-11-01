@@ -10,5 +10,4 @@ func RandomInt(min int, max int) int {
 	random := rand.New(source)
 
 	return random.Intn(max+1-min) + min
-
 }
