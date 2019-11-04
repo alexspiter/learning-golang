@@ -1,16 +1,21 @@
 package console
 
-import "fmt"
+import (
+	"bufio"
+	"fmt"
+	"os"
+	"strings"
+)
 
 func ReadString(a ...interface{}) string {
 	if len(a) > 0 {
 		Write(a...)
 	}
 
-	var result string
-	fmt.Scan(&result)
+	reader := bufio.NewReader(os.Stdin)
+	result, _ := reader.ReadString('\n')
 
-	return result
+	return strings.TrimSuffix(result, "\n")
 }
 
 func ReadChar(a ...interface{}) rune {
