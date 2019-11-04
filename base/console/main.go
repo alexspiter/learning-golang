@@ -15,7 +15,10 @@ func ReadString(a ...interface{}) string {
 	reader := bufio.NewReader(os.Stdin)
 	result, _ := reader.ReadString('\n')
 
-	return strings.TrimSuffix(result, "\n")
+	result = strings.TrimSuffix(result, "\n")
+	result = strings.TrimSuffix(result, "\r")
+
+	return result
 }
 
 func ReadChar(a ...interface{}) rune {
