@@ -11,7 +11,7 @@ func main() {
 
 	console.Writeln("Enter the first number:")
 	fmt.Scan(&first)
-	console.Writeln("Enter the mathematical operator:")
+	console.Writeln("Enter the operator:")
 	fmt.Scan(&operator)
 	console.Writeln("Enter the second number:")
 	fmt.Scan(&second)
