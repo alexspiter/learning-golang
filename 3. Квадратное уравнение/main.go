@@ -2,31 +2,33 @@ package main
 
 import (
 	"../base/console"
-	"fmt"
 	"math"
 )
 
 func main() {
-
-	var a, b, c, D, x, x1, x2 float64
+	var a, b, c, discriminant, scrtDiscriminant, doubleA, x1, x2 float64
 
 	a = console.ReadFloat("Введите a: ")
-	console.Writeln("Введите b:")
-	fmt.Scan(&b)
-	console.Writeln("Введите c:")
-	fmt.Scan(&c)
+	b = console.ReadFloat("Введите b: ")
+	c = console.ReadFloat("Введите c: ")
 
-	D = b*b - 4*a*c
+	discriminant = b*b - 4*a*c
 
-	if (D == 0) {
-		x = -b / (2 * a)
-		println("x = ", x)
-	} else if (D < 0) {
-		println("Данное уравнение не имеет корней")
-	} else {
-		x1 = (-b + math.Sqrt(D)) / 2 * a
-		x2 = (-b - math.Sqrt(D)) / 2 * a
-		console.Writeln("x1 =", x1)
-		console.Writeln("x2 =", x2)
+	if discriminant == 0 {
+		x1 = -b / (2 * a)
+		console.Writeln("x = ", x1)
+		return
 	}
+
+	if discriminant < 0 {
+		console.Writeln("Данное уравнение не имеет корней.")
+		return
+	}
+
+	scrtDiscriminant = math.Sqrt(discriminant)
+	doubleA = 2 * a
+	x1 = (-b + scrtDiscriminant) / doubleA
+	x2 = (-b - scrtDiscriminant) / doubleA
+	console.Writeln("x1 =", x1)
+	console.Writeln("x2 =", x2)
 }
