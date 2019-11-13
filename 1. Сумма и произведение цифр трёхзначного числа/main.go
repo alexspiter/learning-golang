@@ -1,8 +1,8 @@
 package main
 
 import (
-	"awesomeProject/base/console"
-	"awesomeProject/base/rand"
+	"../base/console"
+	"../base/rand"
 )
 
 func main() {
