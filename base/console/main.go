@@ -1,49 +1,34 @@
 package console
 
-import "fmt"
+import (
+	"bufio"
+	"fmt"
+	"os"
+	"strconv"
+)
+
+var reader = bufio.NewReader(os.Stdin)
 
 func ReadString(a ...interface{}) string {
 	if len(a) > 0 {
 		Write(a...)
 	}
 
-	var result string
-	fmt.Scan(&result)
+	result, _, _ := reader.ReadLine()
 
-	return result
-}
-
-func ReadChar(a ...interface{}) rune {
-	if len(a) > 0 {
-		Write(a...)
-	}
-
-	var result rune
-	fmt.Scan(&result)
-
-	return result
+	return string(result)
 }
 
 func ReadInt(a ...interface{}) int {
-	if len(a) > 0 {
-		Write(a...)
-	}
+	number, _ := strconv.Atoi(ReadString(a...))
 
-	var result int
-	fmt.Scan(&result)
-
-	return result
+	return number
 }
 
 func ReadFloat(a ...interface{}) float64 {
-	if len(a) > 0 {
-		Write(a...)
-	}
+	number, _ := strconv.ParseFloat(ReadString(a...), 10)
 
-	var result float64
-	fmt.Scan(&result)
-
-	return result
+	return number
 }
 
 func Write(a ...interface{}) {

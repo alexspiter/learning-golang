@@ -1,7 +1,7 @@
 package main
 
 import (
-	"awesomeProject/base/console"
+	"../base/console"
 	"fmt"
 )
 
