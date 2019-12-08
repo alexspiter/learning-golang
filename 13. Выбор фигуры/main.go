@@ -1,19 +1,26 @@
 package main
 
-import "../base/console"
+import (
+	"../base/console"
+)
+
+const Square = 1
+const Rectangle = 2
+const Triangle = 3
+const Circle = 4
 
 func main() {
-	var x int
 	console.Writeln("Введите номер фигуры (1 - квадрат, 2 - прямоугольник, 3 - треугольник, 4 - круг")
-	x = console.ReadInt()
+	x := console.ReadInt()
+
 	switch x {
-	case 1:
+	case Square:
 		console.Writeln("квадрат")
-	case 2:
+	case Rectangle:
 		console.Writeln("прямоугольник")
-	case 3:
+	case Triangle:
 		console.Writeln("треугольник")
-	case 4:
+	case Circle:
 		console.Writeln("круг")
 	default:
 		console.Writeln("Значение переменной не определено.")

@@ -3,7 +3,6 @@ package main
 import "../base/console"
 
 func main() {
-
 	var first, second, third int
 
 	first = console.ReadInt("Введите первое число: ")
@@ -15,9 +14,10 @@ func main() {
 		return
 	}
 
-	if second > first && second > third {
+	if second > third {
 		console.Writeln(second, "is max")
-	} else {
-		console.Writeln(third, "is max")
+		return
 	}
+
+	console.Writeln(third, "is max")
 }

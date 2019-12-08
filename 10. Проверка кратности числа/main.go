@@ -3,7 +3,6 @@ package main
 import "../base/console"
 
 func main() {
-
 	var first, second int
 
 	console.Writeln("Введите два числа.")
