@@ -1,0 +1,18 @@
+for i := x; i < y; i++ {
+    println(i)
+}
+
+---------
+
+for i := x; i >= y; i -= 10 {
+    if p {
+        break
+    }
+}
+
+---------
+
+for {
+    // ...
+    break
+}

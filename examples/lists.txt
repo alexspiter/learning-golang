@@ -1,0 +1,51 @@
+var a []int
+
+for i := 0; i < 5; i++ {
+	a = append(a, i)
+}
+
+fmt.Println(a)
+
+---------------------
+
+var a [][]int
+
+for i := 0; i < 5; i++ {
+	subarr := make([]int, 0)
+	a = append(a, subarr)
+
+	for j := 0; j < 5; j++ {
+		a[i] = append(a[i], i+j)
+	}
+}
+
+fmt.Println(a)
+
+---------------------
+
+var a [5]int
+
+fmt.Println(a)
+
+---------------------
+
+var a [100]int
+
+for i := 0; i < 100; i++ {
+	a[i] = i
+}
+
+fmt.Println(a)
+fmt.Println(a[90:])
+fmt.Println(a[:10])
+fmt.Println(a[30:40])
+
+---------------------
+
+var a [100]int
+
+for i := 0; i < 100; i++ {
+	a[i] = i
+}
+
+fmt.Println(len(a) / 2)
