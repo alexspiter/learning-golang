@@ -3,16 +3,19 @@ package main
 import "../base/console"
 
 func main() {
+	var sideA, sideB, sideC int
 
-	var length1, length2, length3 int
+	sideA = console.ReadInt("Введите длину первого отрезка: ")
+	sideB = console.ReadInt("Введите длину второго отрезка: ")
+	sideC = console.ReadInt("Введите длину третьего отрезка: ")
 
-	length1 = console.ReadInt("Введите длину первого отрезка: ")
-	length2 = console.ReadInt("Введите длину второго отрезка: ")
-	length3 = console.ReadInt("Введите длину третьего отрезка: ")
-
-	if length1+length2 >= length3 && length2+length3 >= length1 && length1+length3 >= length2 {
+	if sumIsBigger(sideA, sideB, sideC) && sumIsBigger(sideA, sideC, sideB) && sumIsBigger(sideB, sideC, sideA) {
 		console.Writeln("Существование треугольника возможно.")
 	} else {
 		console.Writeln("Существование треугольника невозможно.")
 	}
+}
+
+func sumIsBigger(a, b, c int) bool {
+	return a+b >= c
 }

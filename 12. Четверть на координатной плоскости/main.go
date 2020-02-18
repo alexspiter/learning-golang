@@ -3,7 +3,6 @@ package main
 import "../base/console"
 
 func main() {
-
 	var x, y int
 
 	console.Writeln("Введите координаты точки")
@@ -24,12 +23,16 @@ func main() {
 		console.Writeln("Точка с заданными координатами находится в III четверти.")
 		return
 	}
+
 	if x < 0 && y > 0 {
 		console.Writeln("Точка с заданными координатами находится в VI четверти.")
+		return
 	}
+
 	if x == 0 && y != 0 || y == 0 && x != 0 {
 		console.Writeln("Точка с заданными координатами находится на оси координат.")
-	} else {
-		console.Writeln("Точка с координатами [0, 0] находится в центре координатной плоскости.")
+		return
 	}
+
+	console.Writeln("Точка с координатами [0, 0] находится в центре координатной плоскости.")
 }
