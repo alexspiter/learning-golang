@@ -11,7 +11,6 @@ func main() {
 
 	if first%2 != 0 {
 		console.Writeln(first, "is an odd number.")
-		return
 	} else {
 		console.Writeln(second, "is an odd number.")
 	}

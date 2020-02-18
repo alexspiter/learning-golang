@@ -4,7 +4,7 @@ import "../base/console"
 
 func main() {
 	var x int
-	console.Writeln("Введите номер фигуры (1 - квадрат, 2 - прямоугольник, 3 - треугольник, 4 - круг")
+	console.Writeln("Введите номер фигуры: 1 - квадрат, 2 - прямоугольник, 3 - треугольник, 4 - круг")
 	x = console.ReadInt()
 	switch x {
 	case 1:
