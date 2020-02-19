@@ -2,15 +2,15 @@ package main
 
 import (
 	"../base/console"
-	"strings"
 )
 
 func main() {
-	var string string
+	var text string
 
 	console.Writeln("Введите текст:")
-	string = console.ReadString()
-	console.Writeln(len(string))
-	strings.Split(string, "")
-	console.Writeln(string)
+	text = console.ReadString()
+	half := len(text) / 2
+
+	console.Writeln(text[:half])
+	console.Writeln(text[half:])
 }
